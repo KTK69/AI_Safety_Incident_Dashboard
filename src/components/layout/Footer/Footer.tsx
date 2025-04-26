@@ -26,7 +26,7 @@ export const Footer: React.FC = () => (
         <span className="hidden md:inline mx-2 text-blue-700">|</span>
         {/* GitHub link */}
         <a
-          href="https://github.com/"
+          href="https://github.com/KTK69/AI_Safety_Incident_Dashboard.git"
           target="_blank"
           rel="noopener noreferrer"
           className="ml-3 hover:text-purple-400 transition"
