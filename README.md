@@ -87,7 +87,7 @@ Custom React hooks, including:
 - `useIncidents`: Manages incident state, filtering, and sorting
 
 ## Styles
-Tailwind CSS configuration and global styles for the application.
+Tailwind CSS configuration for the application.
 
 ## Types
 TypeScript type definitions for the application:
