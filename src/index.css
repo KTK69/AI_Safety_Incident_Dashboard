@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@layer components {
+    .shadow-glow {
+      box-shadow: 0 0 15px rgba(59, 130, 246, 0.1);
+    }
+    
+    .ai-pulse {
+      @apply relative w-6 h-6 rounded-full bg-blue-500;
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    
+    .ai-pulse::before {
+      content: '';
+      @apply absolute inset-0 rounded-full bg-blue-400;
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      animation-delay: 0.5s;
+    }
+    
+    .ai-loading-spinner {
+      @apply w-12 h-12 rounded-full border-4 border-blue-500 border-t-transparent;
+      animation: spin 1s linear infinite;
+    }
+    
+    .ai-grid {
+      background-image: 
+        linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    
+    
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
