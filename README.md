@@ -53,7 +53,7 @@ Visit [http://localhost:5173](http://localhost:5173) in your browser.
 - **Responsiveness:** All layouts and components are mobile-friendly, with a responsive navigation bar and forms.
 - **Session-only Data:** User-reported incidents persist only for the current session (in-memory React state), as required.
 - **Animated Elements:** Loading spinners, glowing severity badges, and a starry animated footer enhance the experience.
-- **Theme Switching:** Both light and dark modes are supported, as shown in the screenshots.
+- **Theme Switching:** Both light and dark modes are supported
 
 ---
 
